@@ -53,4 +53,4 @@ while state == True:
 
     if points == 10:
         state = False
-        print "You have won! Here is the next piece of password ''"
+        print "You have won! Here is the next piece of password 'u7v'"
