@@ -31,7 +31,7 @@ points = 0
 
 # main loop of puzzle
 while state == True:
-    print "Pick which is greater!"
+    print "Pick which is greater! Go for 10 points!"
     CreateEqu()
     print "1) {}".format(equ[0])
     print "2) {}".format(equ[1])
