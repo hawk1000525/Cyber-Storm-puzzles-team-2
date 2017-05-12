@@ -29,6 +29,7 @@ def CreateEqu():
 state = True
 points = 0
 
+# main loop of puzzle
 while state == True:
     print "Pick which is greater!"
     CreateEqu()
@@ -40,17 +41,21 @@ while state == True:
     action = raw_input("Pick 1, 2 or, 3 \n")
 
     if action == "1":
+        # checks if the answer is correct
         if equa[0] > equa[1]:
             points += 1
 
     if action == "2":
+        # checks if answer is correct
         if equa[1] > equa[0]:
             points += 1
 
     if action == "3":
+        # checks if answer is correct
         if equa[0] == equa[1]:
             points += 1
 
+    # game ends once the player has gotten 10 correct answers
     if points == 10:
         state = False
         print "You have won! Here is the next piece of password 'u7v'"
