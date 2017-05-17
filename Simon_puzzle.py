@@ -9,7 +9,7 @@ from random import randint
 import pygame
 
 # set to True to enable debugging output
-DEBUG = True
+DEBUG = False
 
 # initialize the pygame library
 pygame.init()
@@ -103,7 +103,7 @@ while (correct != 2):
                 sleep(0.9)
                 GPIO.output(leds[s], False)
                 sleep(0.4)
-                print "Here is the first sequence."
+        print "Here is the first sequence."
         while (correct < 3):
                 new()
                 count = 0
@@ -130,10 +130,6 @@ while (correct != 2):
                                                 # note that a switch has now been pressed
                                                 # so that we don't detect any more switch presses
                                                 pressed = True
-
-                        if (DEBUG):
-                                # display the index of the switch pressed
-                                print val
 
                         # light the matching LED
                         GPIO.output(leds[val], True)
